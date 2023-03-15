@@ -29,10 +29,13 @@ print('0' in a) # True
 
 # 문자열 나눠 list로
 l = list(a.split(':'))
-print(l)
+print(l) # ['홍길동', '010-1234-5678']
+
 
 # 문자열 합치기
-print(','.join(l)) # join()은 list만 사용 가능
+print(','.join(l)) # 홍길동,010-1234-5678
+# 결합시키는 중간에 구분자를 두고 list들을 합침
+
 
 # 문자열 바꾸기
-print(a.replace(':', ','))
+print(a.replace(':', ',')) # 홍길동,010-1234-5678
