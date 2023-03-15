@@ -9,6 +9,9 @@
 nums = input().replace('-', "")
 mulNums = '234567892345'
 
+if(len(nums) != 13):
+    print("주민등록번호를 다시 확인해 주세요.")
+
 sum = 0
 
 for i in range(12):
@@ -16,7 +19,8 @@ for i in range(12):
 
 sum = (11 - sum % 11) % 10
 
-if (sum == int(nums[-1])):
-    print("유효한 주민등록번호입니다.")
+
+if(sum == int(nums[-1])):
+        print("유효한 주민등록번호입니다.")
 else:
     print("유효하지 않은 주민등록번호입니다.")
